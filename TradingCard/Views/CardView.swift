@@ -10,20 +10,14 @@ import SwiftUI
 struct CardView: View {
     
     //MARK: Stored properties
-    let borderColor: Color
-    let backgroundImage: Image
-    let fillColor: Color
-    let creatureImage: Image
-    let description1: String
-    let description2: String
-    let story: String
+    let card: TradingCard
     
     //MARK: Computed properties
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 20)
             VStack {
-                backgroundImage
+                card.backgroundImage
                     .resizable()
                     .clipShape(RoundedRectangle(cornerRadius: 30))
                 .frame(width: 360, height: 650)
@@ -38,15 +32,15 @@ struct CardView: View {
                 TitlesView(fillColor: Color.titleRed, title: "Unholy Heat", fontSize: 30)
                 ZStack {
                     Rectangle()
-                        .stroke(Color(borderColor), lineWidth: 10)
+                        .stroke(Color(card.borderColor), lineWidth: 10)
                         .frame(width: 320)
                 }
                 TitlesView(fillColor: Color.titleRed, title: "Instant", fontSize: 25)
                 ZStack {
                     Rectangle()
-                        .border(Color(borderColor), width: 5)
+                        .border(Color(card.borderColor), width: 5)
                         .frame(width: 300, height: 200)
-                        .foregroundStyle(Color(fillColor))
+                        .foregroundStyle(Color(card.fillColor))
                 }
                 Spacer()
             }
@@ -56,12 +50,6 @@ struct CardView: View {
 
 #Preview {
     CardView(
-        borderColor: Color.red,
-        backgroundImage: Image("fireBackground"),
-        fillColor: Color.textRed,
-        creatureImage: Image("unholyHeat"),
-        description1: "Unholy Heat deals 2 damage to target creature or planeswalker.",
-        description2: "Insert 'delirium'",
-        story: "'The devils use fire. Why shouldn't we?'"
+        card: unholyHeat
     )
 }
