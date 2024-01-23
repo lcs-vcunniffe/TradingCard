@@ -49,10 +49,9 @@ struct TitlesView: View {
                     .fill(Color.clear)
                     .frame(width: 10)
                 Text("\(title)")
-                    .bold()
                     .font(
                         .custom(
-                            "Bodoni 72 Oldstyle Bold",
+                            "American Typewriter Condensed Bold",
                             size: fontSize
                         )
                 )
