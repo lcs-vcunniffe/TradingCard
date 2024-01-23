@@ -21,7 +21,7 @@ struct SymbolView: View {
             Circle()
                 .fill(Color(circleFill))
                 .frame(width: circleSize)
-            Image("fireMana")
+            icon
                 .resizable()
                 .scaledToFit()
                 .frame(width: iconWidth)

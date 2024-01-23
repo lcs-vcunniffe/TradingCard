@@ -23,7 +23,7 @@ struct CardView: View {
         ZStack {
             RoundedRectangle(cornerRadius: 20)
             VStack {
-                Image("fireBackground")
+                backgroundImage
                     .resizable()
                     .clipShape(RoundedRectangle(cornerRadius: 30))
                 .frame(width: 360, height: 650)
