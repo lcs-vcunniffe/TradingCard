@@ -17,8 +17,8 @@ struct Symbols {
 
 let fireMana = Symbols(
     circleFill: Color.manaRed,
-    circleSize: CGFloat,
-    icon: Image,
-    iconWidth: CGFloat,
-    maskShape: any Shape
+    circleSize: 20,
+    icon: Image("fireMana"),
+    iconWidth: 18,
+    maskShape: Circle()
 )

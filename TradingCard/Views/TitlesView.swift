@@ -10,6 +10,7 @@ import SwiftUI
 struct TitlesView: View {
     
     //MARK: Stored properties
+    let icon: Symbols
     let fillColor: Color
     let title: String
     let fontSize: CGFloat
@@ -23,6 +24,22 @@ struct TitlesView: View {
             Capsule(style: RoundedCornerStyle.continuous)
                 .frame(width: 375, height: 35)
                 .foregroundStyle(Color(fillColor))
+                .overlay(
+                    HStack {
+                        Rectangle()
+                            .fill(Color.clear)
+                            .frame(width: 5)
+                        Text("\(title)")
+                            .font(
+                                .custom(
+                                    "American Typewriter Condensed Bold",
+                                    size: fontSize
+                                )
+                        )
+                        Spacer()
+                        
+                    }
+                )
                 .overlay(
                     Capsule(style: RoundedCornerStyle.continuous)
                         .stroke(Color.black, lineWidth: 3)
@@ -44,23 +61,10 @@ struct TitlesView: View {
                         .shadow(color: Color.white, radius: 1.5, x: -1.5, y: 1.5)
                 )
                 .clipShape(Capsule(style: RoundedCornerStyle.continuous))
-            HStack {
-                Rectangle()
-                    .fill(Color.clear)
-                    .frame(width: 10)
-                Text("\(title)")
-                    .font(
-                        .custom(
-                            "American Typewriter Condensed Bold",
-                            size: fontSize
-                        )
-                )
-                Spacer()
-            }
         }
     }
 }
 
 #Preview {
-    TitlesView(fillColor: Color.titleRed, title: "Unholy Heat", fontSize: 30)
+    TitlesView(icon: fireMana, fillColor: Color.titleRed, title: "Unholy Heat", fontSize: 30)
 }

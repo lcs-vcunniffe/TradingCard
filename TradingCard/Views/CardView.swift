@@ -29,13 +29,13 @@ struct CardView: View {
                 .strokeBorder(Color.black, lineWidth: 20)
             VStack {
                 Spacer()
-                TitlesView(fillColor: Color.titleRed, title: "Unholy Heat", fontSize: 30)
+                TitlesView(icon: fireMana, fillColor: Color.titleRed, title: "Unholy Heat", fontSize: 30)
                 ZStack {
                     Rectangle()
                         .stroke(Color(card.borderColor), lineWidth: 10)
                         .frame(width: 320)
                 }
-                TitlesView(fillColor: Color.titleRed, title: "Instant", fontSize: 25)
+                TitlesView(icon: fireMana, fillColor: Color.titleRed, title: "Instant", fontSize: 25)
                 ZStack {
                     Rectangle()
                         .border(Color(card.borderColor), width: 5)
