@@ -16,7 +16,7 @@
 		2E99F4E82B5DD3DD00C4B007 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E99F4E72B5DD3DD00C4B007 /* CardView.swift */; };
 		2E99F4EC2B5FF1A700C4B007 /* SymbolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E99F4EB2B5FF1A700C4B007 /* SymbolView.swift */; };
 		2E99F4F02B602DEB00C4B007 /* TradingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E99F4EF2B602DEB00C4B007 /* TradingCard.swift */; };
-		2E99F4F22B6031B600C4B007 /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E99F4F12B6031B600C4B007 /* Symbols.swift */; };
+		2E99F4F22B6031B600C4B007 /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E99F4F12B6031B600C4B007 /* Symbol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +30,7 @@
 		2E99F4E72B5DD3DD00C4B007 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		2E99F4EB2B5FF1A700C4B007 /* SymbolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolView.swift; sourceTree = "<group>"; };
 		2E99F4EF2B602DEB00C4B007 /* TradingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingCard.swift; sourceTree = "<group>"; };
-		2E99F4F12B6031B600C4B007 /* Symbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbols.swift; sourceTree = "<group>"; };
+		2E99F4F12B6031B600C4B007 /* Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				2E99F4EF2B602DEB00C4B007 /* TradingCard.swift */,
-				2E99F4F12B6031B600C4B007 /* Symbols.swift */,
+				2E99F4F12B6031B600C4B007 /* Symbol.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -172,7 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E99F4EC2B5FF1A700C4B007 /* SymbolView.swift in Sources */,
-				2E99F4F22B6031B600C4B007 /* Symbols.swift in Sources */,
+				2E99F4F22B6031B600C4B007 /* Symbol.swift in Sources */,
 				2E99F4D62B5D905F00C4B007 /* ContentView.swift in Sources */,
 				2E99F4F02B602DEB00C4B007 /* TradingCard.swift in Sources */,
 				2E99F4D42B5D905F00C4B007 /* TradingCardApp.swift in Sources */,

@@ -7,26 +7,26 @@
 
 import SwiftUI
 
-struct Symbols {
+struct Symbol {
     let circleFill: Color
     var circleSize: CGFloat
     let icon: Image
     var iconWidth: CGFloat
-    let maskShape: any Shape
+    let maskShape: String
 }
 
-let fireMana = Symbols(
+let fireMana = Symbol(
     circleFill: Color.manaRed,
     circleSize: 20,
     icon: Image("fireMana"),
     iconWidth: 18,
-    maskShape: Circle()
+    maskShape: "circle"
 )
 
-let placeholder = Symbols(
+let placeholder = Symbol(
     circleFill: Color.black,
     circleSize: 0,
     icon: Image("fireMana"),
     iconWidth: 0,
-    maskShape: Circle()
+    maskShape: "circle"
 )

@@ -10,7 +10,7 @@ import SwiftUI
 struct TitlesView: View {
     
     //MARK: Stored properties
-    let icon: Symbols
+    let icon: Symbol
     let fillColor: Color
     let title: String
     let fontSize: CGFloat
@@ -37,7 +37,7 @@ struct TitlesView: View {
                                 )
                         )
                         Spacer()
-                        //icon
+                        SymbolView(symbol: icon)
                         Rectangle()
                             .fill(Color.clear)
                             .frame(width: 5)

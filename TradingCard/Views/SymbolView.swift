@@ -9,32 +9,30 @@ import SwiftUI
 
 struct SymbolView: View {
     //MARK: Stored properties
-    let circleFill: Color
-    var circleSize: CGFloat
-    let icon: Image
-    var iconWidth: CGFloat
-    let maskShape: any Shape
+    let symbol: Symbol
     
     //MARK: Computed properties
     var body: some View {
         ZStack {
             Circle()
                 .fill(Color.black)
-                .frame(width: circleSize)
+                .frame(width: symbol.circleSize)
                 .offset(x: -2, y: 5)
             Circle()
-                .fill(Color(circleFill))
-                .frame(width: circleSize)
-            icon
+                .fill(Color(symbol.circleFill))
+                .frame(width: symbol.circleSize)
+            symbol.icon
                 .resizable()
                 .scaledToFit()
-                .frame(width: iconWidth)
-                .mask(Circle()) //Placeholder
+                .frame(width: symbol.iconWidth)
+                .mask(
+                    Circle()
+                )
             
         }
     }
 }
 
 #Preview {
-    SymbolView(circleFill: Color.manaRed, circleSize: 80, icon: Image("fireMana"), iconWidth: 65, maskShape: Circle())
+    SymbolView(symbol: fireMana)
 }
