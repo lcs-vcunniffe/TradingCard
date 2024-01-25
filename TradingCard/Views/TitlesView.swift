@@ -37,7 +37,10 @@ struct TitlesView: View {
                                 )
                         )
                         Spacer()
-                        
+                        //icon
+                        Rectangle()
+                            .fill(Color.clear)
+                            .frame(width: 5)
                     }
                 )
                 .overlay(

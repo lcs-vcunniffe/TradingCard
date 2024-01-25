@@ -22,3 +22,11 @@ let fireMana = Symbols(
     iconWidth: 18,
     maskShape: Circle()
 )
+
+let placeholder = Symbols(
+    circleFill: Color.black,
+    circleSize: 0,
+    icon: Image("fireMana"),
+    iconWidth: 0,
+    maskShape: Circle()
+)

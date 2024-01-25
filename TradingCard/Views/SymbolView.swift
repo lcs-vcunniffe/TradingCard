@@ -19,6 +19,10 @@ struct SymbolView: View {
     var body: some View {
         ZStack {
             Circle()
+                .fill(Color.black)
+                .frame(width: circleSize)
+                .offset(x: -2, y: 5)
+            Circle()
                 .fill(Color(circleFill))
                 .frame(width: circleSize)
             icon
