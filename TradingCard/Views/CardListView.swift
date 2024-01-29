@@ -9,11 +9,10 @@ import SwiftUI
 
 struct CardListView: View {
     var body: some View {
-        NavigationStack {
-            VStack {
-                NavigationLink("Unholy Heat", destination: CardView(card: unholyHeat))
-            }
-        }
+        LazyVGrid(columns: /*@START_MENU_TOKEN@*/[GridItem(.fixed(20))]/*@END_MENU_TOKEN@*/, content: {
+            /*@START_MENU_TOKEN@*/Text("Placeholder")/*@END_MENU_TOKEN@*/
+            /*@START_MENU_TOKEN@*/Text("Placeholder")/*@END_MENU_TOKEN@*/
+        })
     }
 }
 

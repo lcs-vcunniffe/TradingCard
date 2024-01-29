@@ -17,7 +17,7 @@ struct SymbolView: View {
             Circle()
                 .fill(Color.black)
                 .frame(width: symbol.circleSize)
-                .offset(x: -2, y: 5)
+                .offset(x: -1, y: 2)
             Circle()
                 .fill(Color(symbol.circleFill))
                 .frame(width: symbol.circleSize)

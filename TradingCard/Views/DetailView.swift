@@ -16,7 +16,7 @@ struct CardView: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 20)
-                .frame(width: 410, height: 570)
+                .frame(width: 400, height: 570)
             VStack {
                 card.backgroundImage
                     .resizable()
